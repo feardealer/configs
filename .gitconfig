@@ -1,0 +1,12 @@
+[user]
+	signingkey = 9E5EBBDEE39577F8
+	name = Vadim
+	email = fancybear@internet.ru
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = /Users/vadim/.gitignore
