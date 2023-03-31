@@ -1,0 +1,113 @@
+colors:
+  primary:
+    background: '#070c14'
+    foreground: '#f8f8f2'
+    bright_foreground: '#ffffff'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#44475a'
+      background: '#50fa7b'
+    focused_match:
+      foreground: '#44475a'
+      background: '#ffb86c'
+  footer_bar:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+  hints:
+    start:
+      foreground: '#282a36'
+      background: '#f1fa8c'
+    end:
+      foreground: '#f1fa8c'
+      background: '#282a36'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '#44475a'
+  normal:
+    black: '#21222c'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#bd93f9'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#f8f8f2'
+  bright:
+    black: '#6272a4'
+    red: '#ff6e6e'
+    green: '#69ff94'
+    yellow: '#ffffa5'
+    blue: '#d6acff'
+    magenta: '#ff92df'
+    cyan: '#a4ffff'
+    white: '#ffffff'
+
+window:
+  dimensions:
+    columns: 100
+    lines: 85
+  padding:
+    x: 0
+    y: 0
+  dynamic_padding: false
+  decorations: none
+  opacity: 1.0
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Light
+  # The bold font face
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Medium
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+  size: 11.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+# Visual Bell
+#
+# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
+# rung, the terminal background will be set to white and transition back to the
+# default background color. You can control the rate of this transition by
+# setting the `duration` property (represented in milliseconds). You can also
+# configure the transition function by setting the `animation` property.
+#
+# Possible values for `animation`
+# `Ease`
+# `EaseOut`
+# `EaseOutSine`
+# `EaseOutQuad`
+# `EaseOutCubic`
+# `EaseOutQuart`
+# `EaseOutQuint`
+# `EaseOutExpo`
+# `EaseOutCirc`
+# `Linear`
+#
+# To completely disable the visual bell, set its duration to 0.
+#
+bell:
+  animation: EaseOutExpo
+  color: '0xffffff'
+  duration: 0
+
+live_config_reload: true
+
+shell:
+  program: /usr/bin/fish
