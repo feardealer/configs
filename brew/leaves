@@ -1,12 +1,14 @@
-bash
 bash-completion
 binutils
 cherrytree
 cmake
+cmake-docs
 exiftool
 exploitdb
 findutils
+gdb
 gnupg
+htop
 john
 libmaxminddb
 libsmi
@@ -22,6 +24,7 @@ sqlmap
 tmux
 tree
 wget
+wireguard-tools
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
