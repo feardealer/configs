@@ -5,6 +5,7 @@ cmake
 cmake-docs
 exiftool
 exploitdb
+ffuf
 findutils
 gdb
 gnupg
@@ -19,6 +20,7 @@ md5sha1sum
 neofetch
 neovim
 node
+openjdk@17
 platypus
 pyenv
 sqlmap
