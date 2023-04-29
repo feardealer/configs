@@ -1,8 +1,13 @@
+automake
 bash-completion
 binutils
 cherrytree
 cmake
 cmake-docs
+cocoapods
+curl
+dos2unix
+esolitos/ipa/sshpass
 exiftool
 exploitdb
 ffuf
@@ -12,9 +17,14 @@ gnupg
 gobuster
 htop
 john
+libimobiledevice
 libmaxminddb
+libnet
+libpcap
 libsmi
 libssh
+libtool
+libxml2
 lua
 md5sha1sum
 neofetch
@@ -23,6 +33,7 @@ node
 openjdk@17
 platypus
 pyenv
+python-tk@3.11
 sqlmap
 tmux
 tree
