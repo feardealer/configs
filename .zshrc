@@ -105,6 +105,16 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias exploits="cd /usr/local/Cellar/exploitdb/2023-03-31/share/exploitdb/exploits"
 alias shellcodes="cd /usr/local/Cellar/exploitdb/2023-03-31/share/exploitdb/shellcodes"
 
+alias burp="java --add-opens=java.desktop/javax.swing=ALL-UNNAMED \
+--add-opens=java.base/java.lang=ALL-UNNAMED \
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED \
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED \
+--add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED \
+-javaagent:$HOME/Fun/Burp_Pro/Loader.jar -noverify -jar $HOME/Fun/Burp_Pro/burpsuite_pro_v2023.2.2.jar &>/dev/null &"
+
+alias speedtest="/Users/vadim/Repos/scripts/WIFI\ Speed\ Test"
+alias snmpcheck="/Users/vadim/Repos/scripts/snmpcheck-1.9.rb"
+
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 if type brew &>/dev/null; then
@@ -117,3 +127,5 @@ fi
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $HOME/.proxy.sh
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+export PATH="/usr/local/opt/libimobiledevice/bin:/usr/local/opt/libxml2/bin:$PATH"
