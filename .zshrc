@@ -114,6 +114,7 @@ alias burp="java --add-opens=java.desktop/javax.swing=ALL-UNNAMED \
 
 alias speedtest="/Users/vadim/Repos/scripts/WIFI\ Speed\ Test"
 alias snmpcheck="/Users/vadim/Repos/scripts/snmpcheck-1.9.rb"
+alias whatweb="/Users/vadim/Repos/WhatWeb/whatweb"
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -129,3 +130,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.proxy.sh
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
 export PATH="/usr/local/opt/libimobiledevice/bin:/usr/local/opt/libxml2/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
