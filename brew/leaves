@@ -34,6 +34,7 @@ openjdk@17
 platypus
 pyenv
 python-tk@3.11
+rbenv
 sqlmap
 tmux
 tree
