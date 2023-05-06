@@ -15,6 +15,7 @@ ffuf
 findutils
 gdb
 gnupg
+gnuplot
 gobuster
 htop
 john
@@ -26,7 +27,6 @@ libsmi
 libssh
 libtool
 libxml2
-lua
 md5sha1sum
 neofetch
 neovim
