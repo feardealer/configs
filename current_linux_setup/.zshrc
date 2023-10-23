@@ -5,17 +5,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="cypher"
 
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-
-# pyenv stuff
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
 # plugins
-plugins=(git archlinux virtualenv pyenv aws vagrant copybuffer)
+plugins=(git archlinux virtualenv pyenv aws vagrant copybuffer golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -29,11 +20,14 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+export SCRIPTS="$HOME/.scripts"
+
 # aliases
 alias zshconf="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 alias vim="nvim"
+alias quick-nmap="$SCRIPTS/nmap_quick_scan.sh"
 
 # proxy
 # source $HOME/.proxy.sh
@@ -48,3 +42,16 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOROOT/bin
+
+export PATH=$PATH:$GOBIN
+
+# Android stuff
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME
+export PATH=$PATH:$ANDROID_SDK_ROOT
+
+# pyenv stuff
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
