@@ -5,6 +5,11 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="cypher"
 
+# pyenv stuff
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 # plugins
 plugins=(git archlinux virtualenv pyenv aws vagrant copybuffer golang)
 
@@ -50,8 +55,3 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME
 export PATH=$PATH:$ANDROID_SDK_ROOT
-
-# pyenv stuff
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
